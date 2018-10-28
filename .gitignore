@@ -1,0 +1,7 @@
+# Author: prakashpandey
+# These files will not be commit to git
+
+.classpath
+.project
+.settings/*
+target/*
