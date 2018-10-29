@@ -36,8 +36,10 @@ public class PacketSniffer
 				IpV4Packet ipV4Packet = packet.get(IpV4Packet.class);
 				Inet4Address srcAddr = ipV4Packet.getHeader().getSrcAddr();
 				Inet4Address dstAddr = ipV4Packet.getHeader().getDstAddr();
-				System.out.println(srcAddr);
-				System.out.println(dstAddr);
+				System.out.println("====================================================================");
+				System.out.println("srcAddr: " + srcAddr);
+				System.out.println("dstAddr: " + dstAddr);
+				System.out.println("ipV4Packet: " + ipV4Packet);
 			} catch (EOFException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
